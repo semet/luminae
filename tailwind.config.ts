@@ -57,6 +57,7 @@ const config: Config = {
                800: "#262626",
                900: "#000000",
             },
+            selected: "#ff7a00",
          },
       },
    },

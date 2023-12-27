@@ -24,7 +24,11 @@ const DesktopMenuTop = () => {
    return (
       <div className="flex w-full xl:w-auto gap-4 lg:gap-[1.2rem] xl:gap-[2rem] text-sm md:text-[1rem] lg:text-[0.875rem] text-gray-500">
          {menus.map((menu) => (
-            <Link href={menu.link} key={menu.label} className="whitespace-nowrap">
+            <Link
+               href={menu.link}
+               key={menu.label}
+               className="whitespace-nowrap hover:text-selected"
+            >
                {menu.label}
             </Link>
          ))}

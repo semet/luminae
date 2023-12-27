@@ -2,13 +2,13 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchBar = () => {
    return (
-      <div className="flex flex-shrink items-center border rounded px-4 py-[0.2em] relative h-[2.5rem] max-w-[28rem] overflow-hidden">
+      <div className="flex flex-shrink items-center border rounded px-4 py-[0.2em] relative h-[2.5rem] max-w-full w-full sm:w-auto sm:max-w-[28rem] overflow-hidden">
          <input
             type="text"
             className="flex-grow !outline-none placeholder:text-gray-400"
             placeholder="Search Products"
          />
-         <div className="flex items-center divide-x-2">
+         <div className="items-center hidden sm:flex mr-3">
             <select className="select max-w-xs rounded-none">
                <option>All Categories</option>
                <option>Homer</option>
@@ -17,9 +17,9 @@ const SearchBar = () => {
                <option>Lisa</option>
                <option>Maggie</option>
             </select>
-            <div className="text-gray-400 pl-4 text-xl">
-               <FaSearch />
-            </div>
+         </div>
+         <div className="text-gray-400 text-xl absolute top-1/2 transform -translate-y-1/2 right-2">
+            <FaSearch />
          </div>
       </div>
    );

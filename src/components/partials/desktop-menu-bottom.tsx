@@ -45,7 +45,7 @@ const menus = [
 
 const DesktopMenuBottom = () => {
    return (
-      <div className="main-padding pt-[30px] pb-2">
+      <div className="hidden sm:block main-padding pt-[30px] pb-2">
          <ul className="flex gap-[3.74rem] overflow-auto whitespace-nowrap">
             {menus.map((menu) => (
                <li key={menu.label}>

@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const HomeHeroSection = () => {
    return (
-      <div className="w-full flex relative">
+      <div className="w-full flex relative h-[28.75rem]">
          {/* left */}
-         <div className="">
+         <div className="w-1/2">
             <Image
                src="/images/banner/1.png"
                width={547}
                height={460}
                alt="hero 1"
-               className="h-full"
+               className="h-full w-full object-cover"
             />
          </div>
          {/* right */}
@@ -74,7 +74,7 @@ const HomeHeroSection = () => {
             </div>
          </div>
          {/* center */}
-         <div className="hidden absolute top-1/2 transform -translate-y-1/2 left-[19.8%] bg-white lg:flex flex-col">
+         <div className="hidden absolute top-1/2 transform -translate-y-1/2 left-[26.8%] bg-white lg:flex flex-col">
             <div className="p-8">
                <span className="block text-center text-md tracking-wide font-semibold">
                   Supper Essentials

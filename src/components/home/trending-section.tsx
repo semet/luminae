@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TrendingCard from "./trending-card";
+import SectionShell from "../shared/section-shell";
 
 const items = [
    {
@@ -27,19 +28,13 @@ const items = [
 
 const TrendingSection = () => {
    return (
-      <div className="main-padding mt-16 flex flex-col gap-12">
-         <div className="flex justify-between items-end w-full px-1">
-            <h3 className="text-[1.75rem]">Trending must-haves</h3>
-            <Link href="#" className="text-sm">
-               View all &#x203A;
-            </Link>
-         </div>
+      <SectionShell link="#" title="Trending must-haves">
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             {items.map((item) => (
                <TrendingCard key={item.title} {...item} />
             ))}
          </div>
-      </div>
+      </SectionShell>
    );
 };
 export default TrendingSection;

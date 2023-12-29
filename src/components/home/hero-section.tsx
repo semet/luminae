@@ -26,7 +26,7 @@ const HomeHeroSection = () => {
                <span className="text-[.95rem] lg:text-[1.75rem] text-gray-200">
                   Poolside glam included From $4.99
                </span>
-               <button className="btn bg-primary-700 hover:bg-primary-900 uppercase text-gray-100 tracking-wider font-light px-10 rounded-sm border-none">
+               <button className="btn bg-primary-700 hover:bg-primary-900 uppercase text-gray-100 tracking-wider font-light px-10 rounded-sm border-none cool-hover">
                   <svg
                      width="25"
                      height="24"

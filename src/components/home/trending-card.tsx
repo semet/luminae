@@ -11,13 +11,13 @@ type Props = {
 
 const TrendingCard: FC<Props> = ({ title, category, image, price, isNew }) => {
    return (
-      <div className="flex flex-col rounded-lg overflow-hidden relative">
+      <div className="flex flex-col rounded-lg overflow-hidden relative group">
          {isNew && <NewBadge />}
-         <div className="w-full">
+         <div className="w-full overflow-hidden">
             <Image
                src={image}
                width={300}
-               className="object-cover w-full"
+               className="object-cover w-full group-hover:scale-105 transition-all duration-500"
                height={380}
                alt={title}
             />
@@ -40,7 +40,7 @@ export default TrendingCard;
 
 const NewBadge = () => {
    return (
-      <div className="absolute top-3 left-3 flex items-center gap-2 bg-secondary-600 px-3.5 py-2 rounded-lg text-gray-100">
+      <div className="absolute top-3 left-3 flex items-center gap-2 bg-secondary-600 px-3.5 py-2 rounded-lg text-gray-100 z-40">
          <svg
             width="28"
             height="28"

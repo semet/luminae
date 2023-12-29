@@ -3,6 +3,10 @@ import HeaderTop from "../partials/header-top";
 import HeaderGray from "../partials/header-gray";
 import DesktopMenuBottom from "../partials/desktop-menu-bottom";
 import SearchBar from "../partials/search-bar";
+import FooterContainer from "../partials/footer";
+import MainFooter from "../partials/main-footer";
+import NewsLetter from "../partials/news-letter";
+import FooterBottom from "../partials/footer-bottom";
 
 type Props = {
    children?: ReactNode;
@@ -23,6 +27,15 @@ const MainLayout: React.FC<Props> = ({ children }) => {
          {/* Desktop Menu bottom */}
          <DesktopMenuBottom />
          {children}
+         {/* footer */}
+         <FooterContainer>
+            {/* Newsletter */}
+            <NewsLetter />
+            {/* Main footer */}
+            <MainFooter />
+            {/* Footer bot */}
+            <FooterBottom />
+         </FooterContainer>
       </div>
    );
 };

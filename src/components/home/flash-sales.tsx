@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import FlashSaleCard from "./flash-sale-card";
 import Link from "next/link";
+import SectionShell from "../shared/section-shell";
 
 const sales = [
    {
@@ -42,19 +43,13 @@ const sales = [
 ];
 const FlashSales = () => {
    return (
-      <div className="main-padding mt-20 flex flex-col gap-12">
-         <div className="flex justify-between items-end w-full px-1">
-            <h3 className="text-[1.75rem]">Flash Sales</h3>
-            <Link href="#" className="text-sm">
-               View all &#x203A;
-            </Link>
-         </div>
+      <SectionShell link="#" title="Flash sales">
          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {sales.map((sale) => (
                <FlashSaleCard key={sale.title} {...sale} />
             ))}
          </div>
-      </div>
+      </SectionShell>
    );
 };
 export default FlashSales;

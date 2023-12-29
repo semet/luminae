@@ -25,7 +25,7 @@ const FlashSaleCard: FC<Props> = ({
    return (
       <div className="flex flex-col items-center py-4 border rounded-md shadow-lg">
          {/* top */}
-         <div className="flex lg:flex-col items-center gap-4 lg:gap-1">
+         <div className="flex flex-col md:flex-row lg:flex-col items-center gap-4 lg:gap-1">
             <span className="mb-4 font-semibold text-gray-400 self-end">
                Deal of the Day
             </span>
@@ -57,8 +57,8 @@ const FlashSaleCard: FC<Props> = ({
             />
          </div>
          {/* description */}
-         <div className="self-start flex flex-col gap-3 px-6 xl:px-12 w-full py-4">
-            <div className="grid grid-cols-2 lg:grid-cols-1 gap-2">
+         <div className="self-start flex flex-col gap-3 px-2 sm:px-6 xl:px-12 w-full py-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2">
                <h3 className="font-semibold tracking-wide">{title}</h3>
                <span className="text-xs">{category}</span>
                <div className="flex items-center">
@@ -69,10 +69,12 @@ const FlashSaleCard: FC<Props> = ({
                      ))}
                   <span className="text-xs ml-2">(54)</span>
                </div>
-               <div className="flex items-center justify-start gap-6 text-sm">
-                  <span className="text-red-500 font-semibold block">${actual}</span>
+               <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+                  <span className="text-red-500 text-xs sm:text-sm font-semibold block">
+                     ${actual}
+                  </span>
                   <span className="text-xs text-gray-500 block">${price}</span>
-                  <div className="badge bg-red-500 rounded-none text-xs text-white">
+                  <div className="badge bg-red-500 rounded-none text-xs text-white whitespace-nowrap">
                      - {discount}%
                   </div>
                </div>

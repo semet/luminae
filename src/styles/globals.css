@@ -1,11 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
+@layer utilities {
    .main-padding {
       @apply px-4 sm:px-4 md:px-6 lg:px-[40px] 2xl:px-[90px];
    }
    .secondary-padding {
       @apply px-4 sm:px-4 md:px-6 2xl:px-40;
+   }
+   /* cool hover */
+   .cool-hover {
+      @apply relative;
+   }
+   .cool-hover::before {
+      @apply content-[''] bg-red-500 absolute top-0 left-0 w-full h-full opacity-15 scale-x-0 transition transform ease-in-out origin-top duration-500;
+   }
+   .cool-hover:hover::before {
+      @apply scale-x-100 origin-bottom;
    }
 }

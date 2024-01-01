@@ -11,7 +11,7 @@ type Props = {
 
 const BannerCategoryCard: FC<Props> = ({ color, image, subtitle, title }) => {
    return (
-      <div className="flex w-full">
+      <div className="flex w-full" data-testid="banner-category-card">
          <div className={`w-1/2  px-5 py-20 flex flex-col justify-between ${color}`}>
             <h3 className="text-4xl font-semibold leading-snug text-white">
                {title}

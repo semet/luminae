@@ -17,7 +17,10 @@ const items = [
 
 const BannerCategoryTwo = () => {
    return (
-      <div className="-mt-10 md:-mt-0 md:py-16 main-padding flex flex-col md:flex-row w-full gap-5">
+      <div
+         data-testid="banner-category-two"
+         className="-mt-10 md:-mt-0 md:py-16 main-padding flex flex-col md:flex-row w-full gap-5"
+      >
          {items.map((item) => (
             <BannerCategoryCard {...item} key={item.title} />
          ))}

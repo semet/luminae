@@ -17,7 +17,10 @@ const items = [
 
 const BannerCategorySection = () => {
    return (
-      <div className="py-16 main-padding flex flex-col md:flex-row items-center w-full gap-5">
+      <div
+         data-testid="banner-category"
+         className="py-16 main-padding flex flex-col md:flex-row items-center w-full gap-5"
+      >
          {items.map((item) => (
             <BannerCategoryCard {...item} key={item.title} />
          ))}

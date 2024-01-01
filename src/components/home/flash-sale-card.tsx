@@ -23,7 +23,10 @@ const FlashSaleCard: FC<Props> = ({
 }) => {
    const time = endHour.split(" ");
    return (
-      <div className="flex flex-col items-center py-4 border rounded-md shadow-lg">
+      <div
+         className="flex flex-col items-center py-4 border rounded-md shadow-lg"
+         data-testid="flash-sale-card"
+      >
          {/* top */}
          <div className="flex flex-col md:flex-row lg:flex-col items-center gap-4 lg:gap-1">
             <span className="mb-4 font-semibold text-gray-400 self-end">

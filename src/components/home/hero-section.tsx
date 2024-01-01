@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HomeHeroSection = () => {
    return (
-      <div className="w-full flex relative h-[28.75rem]">
+      <div className="w-full flex relative h-[28.75rem]" data-testid="hero-section">
          {/* left */}
          <div className="w-1/2">
             <Image

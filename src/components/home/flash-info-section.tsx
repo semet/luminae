@@ -3,7 +3,10 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const FlashInfoSection = () => {
    return (
-      <div className="main-padding bg-[#F7DDD0] hidden md:block">
+      <div
+         data-testid="flash-info-section"
+         className="main-padding bg-[#F7DDD0] hidden md:block"
+      >
          <div className="flex justify-between gap-4 relative overflow-hidden">
             <button className="absolute top-1/2 left-0 text-gray-500 text-xl">
                <FaChevronLeft />

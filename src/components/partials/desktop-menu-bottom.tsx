@@ -209,7 +209,7 @@ const menus = [
 const DesktopMenuBottom = () => {
    return (
       <div className="hidden sm:block main-padding pt-[30px] pb-2">
-         <ul className="flex flex-nowrap gap-[3.74rem] whitespace-nowrap overflow-x-auto overflow-y-hidden">
+         <ul className="flex flex-nowrap gap-[3.74rem] whitespace-nowrap overflow-x-auto overflow-y-hidden scrollbar-thumb-gray-900/5 scrollbar-thin scrollbar-w-[2px] scrollbar-track-transparent">
             {menus.map((menu) => (
                <li key={menu.label} className="z-50">
                   <div className="dropdown dropdown-hover">
